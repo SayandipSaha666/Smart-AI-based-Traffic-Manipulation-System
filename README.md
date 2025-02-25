@@ -1,59 +1,60 @@
 # Smart AI-Based Traffic Manipulation System
 
 ## Overview
-The **Smart AI-Based Traffic Manipulation System** is an intelligent traffic management solution that leverages **YOLOv8** for object detection and **OpenCV** for video processing. This system processes video inputs to detect vehicles and count the number of incoming and outgoing vehicles in real-time. Based on this data, it dynamically adjusts traffic light conditions to optimize traffic flow and reduce congestion.
+The **Smart AI-Based Traffic Manipulation System** is an intelligent traffic management solution leveraging **YOLOv8** for object detection and **OpenCV** for video processing. This system processes video feeds to detect vehicles and count incoming and outgoing vehicles in real-time. The data is then used to dynamically adjust traffic light conditions, optimizing traffic flow and reducing congestion.
 
 ## Features
-- **Real-time Object Detection**: Uses YOLOv8 to accurately detect vehicles.
-- **Vehicle Counting**: Tracks and counts incoming and outgoing vehicles.
+- **Real-time Object Detection**: Utilizes YOLOv8 for accurate vehicle identification.
+- **Vehicle Counting**: Tracks and maintains count of vehicles entering and exiting.
 - **Dynamic Traffic Control**: Adjusts traffic signals based on vehicle density.
-- **OpenCV Integration**: Efficiently processes video streams.
-- **Scalable and Customizable**: Can be adapted to different traffic environments.
+- **Emergency Vehicle Detection**: Automatically prioritizes emergency vehicles.
+- **Accident Detection**: Identifies unusual activities and stops traffic for safety.
 
 ## Technologies Used
-- **YOLOv8** (You Only Look Once) for vehicle detection
-- **OpenCV** for video processing
-- **Python** for implementation
+- **YOLOv8** (You Only Look Once) for vehicle detection.
+- **OpenCV** for video processing.
+- **Python** for implementation.
+- **Arduino** for traffic signal control.
 
-## Installation
-To get started, clone the repository and install the necessary dependencies:
-
-```bash
-git clone https://github.com/yourusername/Smart-AI-based-Traffic-Manipulation-System.git
-cd Smart-AI-based-Traffic-Manipulation-System
-pip install -r requirements.txt
-```
-
-## Usage
-Run the system by executing:
-
-```bash
-python main.py --video input_video.mp4
-```
-
-### Arguments:
-- `--video` : Path to the input video file.
-- `--live` : (Optional) Enable real-time processing from a camera.
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/SayandipSaha666/Smart-AI-based-Traffic-Manipulation-System.git
+   cd Smart-AI-based-Traffic-Manipulation-System
+   ```
+2. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Run the system:
+   ```sh
+   python main.py --video input_video.mp4
+   ```
+   
+   **Arguments:**
+   - `--video` : Path to the input video file.
+   - `--live` : (Optional) Enable real-time processing from a camera.
 
 ## How It Works
-1. **Video Input**: The system takes a video feed as input.
-2. **Object Detection**: YOLOv8 identifies and classifies vehicles in each frame.
-3. **Vehicle Counting**: Tracks the number of incoming and outgoing vehicles.
-4. **Traffic Signal Adjustment**: Adjusts the traffic lights dynamically based on the detected vehicle count.
+1. **Video Input**: The system processes video feeds from cameras.
+2. **Object Detection**: YOLOv8 detects and classifies vehicles.
+3. **Vehicle Counting**: Tracks vehicles entering and exiting a zone.
+4. **Traffic Signal Adjustment**: Dynamically modifies signal timings based on real-time vehicle count.
 
 ## Future Enhancements
-- Implementing **deep learning-based traffic prediction**
-- Enhancing detection for **bicycles, pedestrians, and emergency vehicles**
-- Integrating **IoT sensors** for real-world deployment
+- **Integration with GPS & Google Maps** for real-time traffic updates.
+- **Advanced Traffic Prediction Models** using AI.
+- **Dynamic Lane Management** to optimize road usage.
+- **Better Pedestrian Safety Measures** with intelligent signal control.
 
 ## Contributing
-Contributions are welcome! Please create an issue or pull request for any improvements.
+Contributions are welcome! Please create an issue or pull request for improvements.
 
 ## License
 This project is licensed under the MIT License.
 
 ## Contact
-For any queries, reach out at sahasbhs2022@gmail.com or open an issue in the repository.
+For queries, open an issue on the [GitHub repository](https://github.com/SayandipSaha666/Smart-AI-based-Traffic-Manipulation-System) or contact **sahasbhs2022@gmail.com**.
 
 ---
 Made with ❤️ using AI & Computer Vision.
